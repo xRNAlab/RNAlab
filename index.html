@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>课题组介绍</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.2;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">课题组名称</a>
+            <div class="space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">首页</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">研究方向</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">成员介绍</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">成果展示</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图 -->
+    <section class="relative">
+        <div class="slick-slider">
+            <div>
+                <img src="https://picsum.photos/1200/600" alt="课题组活动1" class="w-full h-64 object-cover">
+            </div>
+            <div>
+                <img src="https://picsum.photos/1200/601" alt="课题组活动2" class="w-full h-64 object-cover">
+            </div>
+            <div>
+                <img src="https://picsum.photos/1200/602" alt="课题组活动3" class="w-full h-64 object-cover">
+            </div>
+        </div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+            <button class="bg-white text-gray-600 px-3 py-1 rounded-md mr-2 hover:bg-gray-200">上一张</button>
+            <button class="bg-white text-gray-600 px-3 py-1 rounded-md hover:bg-gray-200">下一张</button>
+        </div>
+    </section>
+
+    <!-- 课题组简介 -->
+    <section class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">课题组简介</h2>
+        <p class="text-gray-600 mb-4">我们的课题组专注于前沿科学研究，致力于解决领域内的关键问题。凭借先进的研究设备和优秀的科研团队，我们在多个方向取得了显著成果。</p>
+        <p class="text-gray-600">课题组积极开展国际合作与交流，与多所知名高校和科研机构建立了长期合作关系，为科研人员提供了广阔的发展空间。</p>
+    </section>
+
+    <!-- 研究方向 -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">研究方向</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-md shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">方向一：人工智能与机器学习</h3>
+                    <p class="text-gray-600">探索人工智能和机器学习在本领域的应用，开发高效的算法和模型。</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-md shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">方向二：材料科学与工程</h3>
+                    <p class="text-gray-600">研究新型材料的制备和性能，推动材料科学的发展。</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-md shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">方向三：能源与环境科学</h3>
+                    <p class="text-gray-600">致力于解决能源和环境领域的关键问题，开发可持续的能源技术。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成员介绍 -->
+    <section class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">成员介绍</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <img src="https://picsum.photos/200/200" alt="成员1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">成员姓名1</h3>
+                <p class="text-gray-600 text-center">职位：教授<br>研究方向：人工智能与机器学习</p>
+            </div>
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <img src="https://picsum.photos/201/201" alt="成员2" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">成员姓名2</h3>
+                <p class="text-gray-600 text-center">职位：副教授<br>研究方向：材料科学与工程</p>
+            </div>
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <img src="https://picsum.photos/202/202" alt="成员3" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold text-gray-800 mb-2 text-center">成员姓名3</h3>
+                <p class="text-gray-600 text-center">职位：讲师<br>研究方向：能源与环境科学</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成果展示 -->
+    <section class="bg-white py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">成果展示</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-md shadow-md">
+                    <img src="https://picsum.photos/300/200" alt="成果1" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">成果标题1</h3>
+                    <p class="text-gray-600">简要描述成果的主要内容和意义。</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-md shadow-md">
+                    <img src="https://picsum.photos/301/201" alt="成果2" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">成果标题2</h3>
+                    <p class="text-gray-600">简要描述成果的主要内容和意义。</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-md shadow-md">
+                    <img src="https://picsum.photos/302/202" alt="成果3" class="w-full h-48 object-cover mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">成果标题3</h3>
+                    <p class="text-gray-600">简要描述成果的主要内容和意义。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 课题组名称。保留所有权利。</p>
+            <div class="mt-2">
+                <a href="#" class="text-white hover:text-gray-400 mr-4"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white hover:text-gray-400 mr-4"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+    
