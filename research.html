@@ -1,70 +1,67 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <title>研究方向</title>
+    <title>Research</title>
     <style>
+        /* 整体布局 */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
         }
-
-        h1,
-        h2,
-        h3 {
-            line-height: 1.2;
+        /* 标题样式 */
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
         }
-
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        /* 图片样式 */
+        img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 20px auto;
+        }
+        /* 段落样式 */
         p {
-            line-height: 1.5;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
         }
     </style>
 </head>
-
-<body class="bg-gray-100">
-    <!-- 导航栏 -->
-    <nav class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold text-gray-800">课题组名称</a>
-            <div class="space-x-4">
-                <a href="research.html" class="text-gray-600 hover:text-gray-800">RESEARCH</a>
-                <a href="team.html" class="text-gray-600 hover:text-gray-800">TEAM</a>
-                <a href="publications.html" class="text-gray-600 hover:text-gray-800">PUBLICATIONS</a>
-                <a href="news.html" class="text-gray-600 hover:text-gray-800">NEWS</a>
-                <a href="contact.html" class="text-gray-600 hover:text-gray-800">CONTACT</a>
-            </div>
-        </div>
+<body>
+    <!-- 导航栏，这里假设和主页一致，暂时省略详细代码 -->
+    <nav>
+        <!-- 导航栏内容 -->
     </nav>
-
-    <!-- 研究方向内容 -->
-    <section class="container mx-auto px-4 py-8">
-        <h2 class="text-3xl font-bold text-gray-800 mb-8">研究方向</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-gray-100 p-6 rounded-md shadow-md">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">研究方向一：人工智能算法指导的 mRNA 疫苗和药物设计</h3>
-                <p class="text-gray-600">人工智能算法指导的 mRNA 疫苗和药物设计</p>
-            </div>
-            <div class="bg-gray-100 p-6 rounded-md shadow-md">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">研究方向二：结构指导的靶向蛋白降解 mRNA 药物设计</h3>
-                <p class="text-gray-600">研究...方向 22222222...。</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 页脚 -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2025 课题组名称。保留所有权利。</p>
-            <div class="mt-2">
-                <a href="#" class="text-white hover:text-gray-400 mr-4"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white hover:text-gray-400 mr-4"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
+    <h1>Research</h1>
+    <!-- 用网络图库图片替代，这里以picsum.photos为例 -->
+    <img src="https://picsum.photos/800/400?random=1" alt="Research Image">
+    <h2>Cytosolic immune sensors for nucleic acids</h2>
+    <p>A hallmark of our immune system is the ability to discriminate between self and non-self molecules. To achieve this goal, cells utilize various sensors to recognize patterns frequently found in pathogens. These sensors are known as Pattern Recognition Receptors (PRRs). PRRs recognize DNA and RNA from microbial and viral pathogens. For example, in the cytosol, cGAS detects both viral and host DNA while RIG-I and MDA5 detect RNA. These sensors pass down the signals through different adapter proteins, which eventually merge to trigger the interferon (IFN) immune response, as the body’s first line of defense against viruses. Yet how cells avoid unwanted recognition of self molecules to prevent autoimmunity is poorly understood.</p>
+    <h2>ADAR1 editing</h2>
+    <p>MDA5 is a cytosolic receptor that recognizes viral double-stranded RNAs (dsRNAs) to activate the antiviral IFN response. How does MDA5 avoid sensing self dsRNAs? The answer is Adenosine-to-Inosine (A-to-I) RNA editing catalyzed by ADAR that labels endogenous dsRNAs as self to evade MDA5 sensing. Mice deficient with ADAR1 editing are embryonic lethal, but can be rescued to full life span when MDA5 is removed. In humans, ADAR1 loss-of-function and MDA5 gain-of-function mutations lead to rare autoimmune diseases such as Aicardi-Gouteries Syndrome. While aberrant activation of MDA5 sensing is deleterious in healthy individuals, it can be beneficial in cancer immunotherapy. RNA editing occurs at millions of sites across human tissues (Tan, Li et al., Nature 2017), but it was unclear which dsRNAs, if not properly edited, are immunogenic, and what role the ADAR1-dsRNA-MDA5 axis plays in common diseases.</p>
+    <h2>edQTLs mediate heritability of inflammatory diseases</h2>
+    <p>During Dr. Li’s postdoctoral training, he turned to human genetics for answers to these questions. He discovered that RNA editing quantitative trait loci (edQTLs) are strongly enriched in GWAS signals of common inflammatory diseases, even more than gene expression QTL and RNA splicing QTL. Furthermore, he showed that GWAS risk alleles, by each reducing editing level of their nearby immunogenic dsRNAs, can collectively elicit MDA5-dependent dsRNA sensing and subsequent chronic inflammation in a wide range of autoimmune and inflammatory diseases (Li et al., Nature 2022 ). These findings, based on well-established mechanism and human genetic evidence, show that insufficient RNA editing is a major risk factor underlying inflammatory diseases.</p>
+    <h2>Personalized dsRNA burden predicts individual’s disease risk</h2>
+    <p>Our lab’s research goal is to advance basic understanding of dsRNA editing and sensing to develop better tools for diagnosis and treatment of inflammatory disease patients. Specifically, we ask three questions:</p>
+    <ul>
+        <li>How do self dsRNAs evade innate immune sensing?</li>
+        <li>How do disease associated genetic variants affect dsRNA editing and sensing?</li>
+        <li>Which disease relevant cells are the trigger of immune response due to unwanted RNA sensing?</li>
+    </ul>
+    <p>We employ an integrated approach including both computational and experimental tools to address basic questions in dsRNA editing and sensing. By doing so, we aim to bring new insights into autoimmunity and RNA therapeutics.</p>
 </body>
-
 </html>
