@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>出版物</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.2;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+       .publication-item {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.375rem;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+       .publication-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.375rem;
+            margin-bottom: 1rem;
+        }
+
+       .publication-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+       .publication-authors {
+            font-style: italic;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+       .publication-info {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- 顶部导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-800">课题组名称</a>
+            <div class="space-x-4">
+                <a href="research.html" class="text-gray-600 hover:text-gray-800">RESEARCH</a>
+                <a href="team.html" class="text-gray-600 hover:text-gray-800">TEAM</a>
+                <a href="publications.html" class="text-gray-600 hover:text-gray-800">PUBLICATIONS</a>
+                <a href="news.html" class="text-gray-600 hover:text-gray-800">NEWS</a>
+                <a href="contact.html" class="text-gray-600 hover:text-gray-800">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 出版物内容 -->
+    <div class="container mx-auto py-10">
+        <h1 class="text-3xl font-bold text-center mb-8">出版物</h1>
+        <!-- 第一篇出版物 -->
+        <div class="publication-item">
+            <img src="https://picsum.photos/300/200" alt="出版物图片 1">
+            <h2 class="publication-title">出版物标题 1</h2>
+            <p class="publication-authors">作者 1, 作者 2, 作者 3</p>
+            <p class="publication-info">期刊名称 1, 卷号 X, 期号 Y, 页码 Z, 年份 202X</p>
+        </div>
+        <!-- 第二篇出版物 -->
+        <div class="publication-item">
+            <img src="https://picsum.photos/300/201" alt="出版物图片 2">
+            <h2 class="publication-title">出版物标题 2</h2>
+            <p class="publication-authors">作者 A, 作者 B, 作者 C</p>
+            <p class="publication-info">期刊名称 2, 卷号 M, 期号 N, 页码 P, 年份 202Y</p>
+        </div>
+        <!-- 可按需添加更多出版物 -->
+    </div>
+</body>
+
+</html>
+    
