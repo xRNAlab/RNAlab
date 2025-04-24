@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <title>研究方向</title>
+    <title>团队成员</title>
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -20,6 +20,20 @@
 
         p {
             line-height: 1.5;
+        }
+
+       .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+       .team-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            justify-items: center;
         }
     </style>
 </head>
@@ -39,29 +53,55 @@
         </div>
     </nav>
 
-    <!-- 第一段：左图右文字 -->
-    <div class="container mx-auto py-10">
-        <div class="flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2">
-                <img src="https://picsum.photos/400/300" alt="研究方向 1" class="rounded-md shadow-md">
-            </div>
-            <div class="md:w-1/2 md:pl-10 py-6 md:py-0">
-                <h2 class="text-2xl font-bold mb-4">研究方向 1</h2>
-                <p class="text-gray-700">这里是研究方向 1 的详细介绍。本研究聚焦于......通过一系列的实验和分析，我们取得了......的成果。</p>
-            </div>
+    <!-- 团队成员展示 -->
+    <div class="container mx-auto py-10 team-container">
+        <!-- 教授 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/100" alt="教授" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">教授姓名</h2>
+            <p class="text-gray-700 text-center">教授简介：该教授在本领域拥有深厚的学术造诣和丰富的研究经验，主要研究方向为......</p>
         </div>
-    </div>
 
-    <!-- 第二段：右图左文字 -->
-    <div class="container mx-auto py-10">
-        <div class="flex flex-col md:flex-row-reverse items-center">
-            <div class="md:w-1/2">
-                <img src="https://picsum.photos/400/301" alt="研究方向 2" class="rounded-md shadow-md">
-            </div>
-            <div class="md:w-1/2 md:pr-10 py-6 md:py-0">
-                <h2 class="text-2xl font-bold mb-4">研究方向 2</h2>
-                <p class="text-gray-700">这里是研究方向 2 的详细介绍。本研究关注......采用了......的方法，为该领域带来了......的新思路。</p>
-            </div>
+        <!-- 博士后 1 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/101" alt="博士后 1" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">博士后姓名 1</h2>
+            <p class="text-gray-700 text-center">博士后简介：专注于......方面的研究，在相关领域取得了......的成果。</p>
+        </div>
+
+        <!-- 博士后 2 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/102" alt="博士后 2" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">博士后姓名 2</h2>
+            <p class="text-gray-700 text-center">博士后简介：致力于......研究，为课题组带来了新的思路和方法。</p>
+        </div>
+
+        <!-- 研究生 1 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/103" alt="研究生 1" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">研究生姓名 1</h2>
+            <p class="text-gray-700 text-center">研究生简介：主要参与......项目的研究，在实验和数据分析方面表现出色。</p>
+        </div>
+
+        <!-- 研究生 2 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/104" alt="研究生 2" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">研究生姓名 2</h2>
+            <p class="text-gray-700 text-center">研究生简介：专注于......方向的研究，积极探索新的研究方法。</p>
+        </div>
+
+        <!-- 本科生 1 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/105" alt="本科生 1" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">本科生姓名 1</h2>
+            <p class="text-gray-700 text-center">本科生简介：在课题组中学习和实践，对......方面的研究充满热情。</p>
+        </div>
+
+        <!-- 本科生 2 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/106" alt="本科生 2" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">本科生姓名 2</h2>
+            <p class="text-gray-700 text-center">本科生简介：积极参与课题组的各项活动，努力提升自己的科研能力。</p>
         </div>
     </div>
 </body>
