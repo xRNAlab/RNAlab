@@ -4,382 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <title>团队成员</title>
     <style>
-        /* 全局样式 */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Inter', sans-serif;
         }
 
-        /* 头部样式 */
-        header {
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
+        h1,
+        h2,
+        h3 {
+            line-height: 1.2;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        /* 模块标题样式 */
-       .module-title {
-            font-size: 24px;
-            background-color: #e0e0e0;
-            padding: 10px;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        /* 成员容器样式 */
-       .team-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 20px;
-        }
-
-        /* 单个成员样式 */
-       .team-member {
-            width: 300px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            padding: 20px;
-            text-align: center;
+        p {
+            line-height: 1.5;
         }
 
        .team-member img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            margin-bottom: 10px;
+            object-fit: cover;
         }
 
-       .team-member h2 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-       .team-member p {
-            margin: 10px 0;
-            font-size: 16px;
-            color: #666;
-        }
-
-        /* 页脚样式 */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
+       .team-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            justify-items: center;
         }
     </style>
 </head>
 
-<body>
-    <!-- 头部 -->
-    <header>
-        <h1>团队成员</h1>
-    </header>
+<body class="bg-gray-100">
+    <!-- 顶部导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-800">课题组名称</a>
+            <div class="space-x-4">
+                <a href="research.html" class="text-gray-600 hover:text-gray-800">RESEARCH</a>
+                <a href="team.html" class="text-gray-600 hover:text-gray-800">TEAM</a>
+                <a href="publications.html" class="text-gray-600 hover:text-gray-800">PUBLICATIONS</a>
+                <a href="news.html" class="text-gray-600 hover:text-gray-800">NEWS</a>
+                <a href="contact.html" class="text-gray-600 hover:text-gray-800">CONTACT</a>
+            </div>
+        </div>
+    </nav>
 
-    <!-- 教授模块 -->
-    <h2 class="module-title">教授</h2>
-    <div class="team-container">
-        <!-- 教授成员1 -->
+    <!-- 团队成员展示 -->
+    <div class="container mx-auto py-10 team-container">
+        <!-- 教授 -->
         <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=1" alt="教授1头像">
-            <h2>教授姓名1</h2>
-            <p>职位：教授</p>
-            <p>研究方向：人工智能算法指导的mRNA疫苗和药物设计</p>
+            <img src="https://picsum.photos/100/100" alt="教授" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">教授姓名</h2>
+            <p class="text-gray-700 text-center">教授简介：该教授在本领域拥有深厚的学术造诣和丰富的研究经验，主要研究方向为......</p>
+        </div>
+
+        <!-- 博士后 1 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/101" alt="博士后 1" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">博士后姓名 1</h2>
+            <p class="text-gray-700 text-center">博士后简介：专注于......方面的研究，在相关领域取得了......的成果。</p>
+        </div>
+
+        <!-- 博士后 2 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/102" alt="博士后 2" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">博士后姓名 2</h2>
+            <p class="text-gray-700 text-center">博士后简介：致力于......研究，为课题组带来了新的思路和方法。</p>
+        </div>
+
+        <!-- 研究生 1 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/103" alt="研究生 1" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">研究生姓名 1</h2>
+            <p class="text-gray-700 text-center">研究生简介：主要参与......项目的研究，在实验和数据分析方面表现出色。</p>
+        </div>
+
+        <!-- 研究生 2 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/104" alt="研究生 2" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">研究生姓名 2</h2>
+            <p class="text-gray-700 text-center">研究生简介：专注于......方向的研究，积极探索新的研究方法。</p>
+        </div>
+
+        <!-- 本科生 1 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/105" alt="本科生 1" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">本科生姓名 1</h2>
+            <p class="text-gray-700 text-center">本科生简介：在课题组中学习和实践，对......方面的研究充满热情。</p>
+        </div>
+
+        <!-- 本科生 2 -->
+        <div class="team-member">
+            <img src="https://picsum.photos/100/106" alt="本科生 2" class="mx-auto mb-4">
+            <h2 class="text-xl font-bold text-center mb-2">本科生姓名 2</h2>
+            <p class="text-gray-700 text-center">本科生简介：积极参与课题组的各项活动，努力提升自己的科研能力。</p>
         </div>
     </div>
-
-    <!-- 博士后模块 -->
-    <h2 class="module-title">博士后</h2>
-    <div class="team-container">
-        <!-- 博士后成员1 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=2" alt="博士后1头像">
-            <h2>博士后姓名1</h2>
-            <p>职位：博士后</p>
-            <p>研究方向：mRNA疫苗的递送系统研究</p>
-        </div>
-        <!-- 博士后成员2 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=3" alt="博士后2头像">
-            <h2>博士后姓名2</h2>
-            <p>职位：博士后</p>
-            <p>研究方向：mRNA稳定性优化研究</p>
-        </div>
-        <!-- 博士后成员3 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=4" alt="博士后3头像">
-            <h2>博士后姓名3</h2>
-            <p>职位：博士后</p>
-            <p>研究方向：mRNA翻译效率提升研究</p>
-        </div>
-        <!-- 博士后成员4 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=5" alt="博士后4头像">
-            <h2>博士后姓名4</h2>
-            <p>职位：博士后</p>
-            <p>研究方向：mRNA免疫原性调控研究</p>
-        </div>
-    </div>
-
-    <!-- 研究生模块 -->
-    <h2 class="module-title">研究生</h2>
-    <div class="team-container">
-        <!-- 研究生成员1 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=6" alt="研究生1头像">
-            <h2>研究生姓名1</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：基于结构的mRNA二级结构预测</p>
-        </div>
-        <!-- 研究生成员2 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=7" alt="研究生2头像">
-            <h2>研究生姓名2</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA序列优化算法研究</p>
-        </div>
-        <!-- 研究生成员3 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=8" alt="研究生3头像">
-            <h2>研究生姓名3</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA递送载体材料研究</p>
-        </div>
-        <!-- 研究生成员4 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=9" alt="研究生4头像">
-            <h2>研究生姓名4</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA疫苗生产工艺优化</p>
-        </div>
-        <!-- 研究生成员5 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=10" alt="研究生5头像">
-            <h2>研究生姓名5</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA与免疫系统相互作用机制研究</p>
-        </div>
-        <!-- 研究生成员6 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=11" alt="研究生6头像">
-            <h2>研究生姓名6</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA药物靶向递送策略研究</p>
-        </div>
-        <!-- 研究生成员7 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=12" alt="研究生7头像">
-            <h2>研究生姓名7</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA疫苗免疫效果评估方法研究</p>
-        </div>
-        <!-- 研究生成员8 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=13" alt="研究生8头像">
-            <h2>研究生姓名8</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA在肿瘤治疗中的应用研究</p>
-        </div>
-        <!-- 研究生成员9 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=14" alt="研究生9头像">
-            <h2>研究生姓名9</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA在传染病防治中的应用研究</p>
-        </div>
-        <!-- 研究生成员10 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=15" alt="研究生10头像">
-            <h2>研究生姓名10</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA修饰技术研究</p>
-        </div>
-        <!-- 研究生成员11 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=16" alt="研究生11头像">
-            <h2>研究生姓名11</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA质量控制标准研究</p>
-        </div>
-        <!-- 研究生成员12 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=17" alt="研究生12头像">
-            <h2>研究生姓名12</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA储存稳定性研究</p>
-        </div>
-        <!-- 研究生成员13 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=18" alt="研究生13头像">
-            <h2>研究生姓名13</h2>
-            <p>职位：研究生</p>
-            <p>研究方向：mRNA临床试验设计与评估研究</p>
-        </div>
-    </div>
-
-    <!-- 本科生模块 -->
-    <h2 class="module-title">本科生</h2>
-    <div class="team-container">
-        <!-- 本科生成员1 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=19" alt="本科生1头像">
-            <h2>本科生姓名1</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA疫苗基础研究辅助工作</p>
-        </div>
-        <!-- 本科生成员2 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=20" alt="本科生2头像">
-            <h2>本科生姓名2</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA序列数据分析辅助工作</p>
-        </div>
-        <!-- 本科生成员3 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=21" alt="本科生3头像">
-            <h2>本科生姓名3</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA递送载体制备辅助工作</p>
-        </div>
-        <!-- 本科生成员4 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=22" alt="本科生4头像">
-            <h2>本科生姓名4</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA疫苗免疫实验辅助工作</p>
-        </div>
-        <!-- 本科生成员5 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=23" alt="本科生5头像">
-            <h2>本科生姓名5</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA稳定性检测辅助工作</p>
-        </div>
-        <!-- 本科生成员6 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=24" alt="本科生6头像">
-            <h2>本科生姓名6</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA修饰实验辅助工作</p>
-        </div>
-        <!-- 本科生成员7 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=25" alt="本科生7头像">
-            <h2>本科生姓名7</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA生产工艺优化实验辅助工作</p>
-        </div>
-        <!-- 本科生成员8 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=26" alt="本科生8头像">
-            <h2>本科生姓名8</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA质量控制检测辅助工作</p>
-        </div>
-        <!-- 本科生成员9 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=27" alt="本科生9头像">
-            <h2>本科生姓名9</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA储存条件优化实验辅助工作</p>
-        </div>
-        <!-- 本科生成员10 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=28" alt="本科生10头像">
-            <h2>本科生姓名10</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA临床试验数据收集辅助工作</p>
-        </div>
-        <!-- 本科生成员11 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=29" alt="本科生11头像">
-            <h2>本科生姓名11</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA与免疫系统相互作用实验辅助工作</p>
-        </div>
-        <!-- 本科生成员12 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=30" alt="本科生12头像">
-            <h2>本科生姓名12</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA药物靶向递送实验辅助工作</p>
-        </div>
-        <!-- 本科生成员13 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=31" alt="本科生13头像">
-            <h2>本科生姓名13</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA免疫效果评估实验辅助工作</p>
-        </div>
-        <!-- 本科生成员14 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=32" alt="本科生14头像">
-            <h2>本科生姓名14</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA在肿瘤治疗中的应用实验辅助工作</p>
-        </div>
-        <!-- 本科生成员15 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=33" alt="本科生15头像">
-            <h2>本科生姓名15</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA在传染病防治中的应用实验辅助工作</p>
-        </div>
-        <!-- 本科生成员16 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=34" alt="本科生16头像">
-            <h2>本科生姓名16</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA基础理论研究资料收集工作</p>
-        </div>
-        <!-- 本科生成员17 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=35" alt="本科生17头像">
-            <h2>本科生姓名17</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA相关文献翻译工作</p>
-        </div>
-        <!-- 本科生成员18 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=36" alt="本科生18头像">
-            <h2>本科生姓名18</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA实验设备维护与管理工作</p>
-        </div>
-        <!-- 本科生成员19 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=37" alt="本科生19头像">
-            <h2>本科生姓名19</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA实验数据录入与整理工作</p>
-        </div>
-        <!-- 本科生成员20 -->
-        <div class="team-member">
-            <img src="https://picsum.photos/200/200?random=38" alt="本科生20头像">
-            <h2>本科生姓名20</h2>
-            <p>职位：本科生</p>
-            <p>参与项目：mRNA研究成果展示资料准备工作</p>
-        </div>
-    </div>
-
-    <!-- 页脚 -->
-    <footer>
-        &copy; 2025 团队名称. 保留所有权利.
-    </footer>
 </body>
 
-</html>    
+</html>
+    
