@@ -1,67 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <title>研究方向</title>
     <style>
-        /* 整体布局 */
         body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 20px;
+            font-family: 'Inter', sans-serif;
         }
-        /* 标题样式 */
-        h1 {
-            font-size: 36px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 30px;
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.2;
         }
-        h2 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        /* 图片样式 */
-        img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
-        }
-        /* 段落样式 */
+
         p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 15px;
+            line-height: 1.5;
         }
     </style>
 </head>
-<body>
-    <!-- 导航栏，这里假设和主页一致，暂时省略详细代码 -->
-    <nav>
-        <!-- 导航栏内容 -->
+
+<body class="bg-gray-100">
+    <!-- 顶部导航栏 -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-800">课题组名称</a>
+            <div class="space-x-4">
+                <a href="research.html" class="text-gray-600 hover:text-gray-800">RESEARCH</a>
+                <a href="team.html" class="text-gray-600 hover:text-gray-800">TEAM</a>
+                <a href="publications.html" class="text-gray-600 hover:text-gray-800">PUBLICATIONS</a>
+                <a href="news.html" class="text-gray-600 hover:text-gray-800">NEWS</a>
+                <a href="contact.html" class="text-gray-600 hover:text-gray-800">CONTACT</a>
+            </div>
+        </div>
     </nav>
-    <h1>Research</h1>
-    <!-- 用网络图库图片替代，这里以picsum.photos为例 -->
-    <img src="https://picsum.photos/800/400?random=1" alt="Research Image">
-    <h2>Cytosolic immune sensors for nucleic acids</h2>
-    <p>A hallmark of our immune system is the ability to discriminate between self and non-self molecules. To achieve this goal, cells utilize various sensors to recognize patterns frequently found in pathogens. These sensors are known as Pattern Recognition Receptors (PRRs). PRRs recognize DNA and RNA from microbial and viral pathogens. For example, in the cytosol, cGAS detects both viral and host DNA while RIG-I and MDA5 detect RNA. These sensors pass down the signals through different adapter proteins, which eventually merge to trigger the interferon (IFN) immune response, as the body’s first line of defense against viruses. Yet how cells avoid unwanted recognition of self molecules to prevent autoimmunity is poorly understood.</p>
-    <h2>ADAR1 editing</h2>
-    <p>MDA5 is a cytosolic receptor that recognizes viral double-stranded RNAs (dsRNAs) to activate the antiviral IFN response. How does MDA5 avoid sensing self dsRNAs? The answer is Adenosine-to-Inosine (A-to-I) RNA editing catalyzed by ADAR that labels endogenous dsRNAs as self to evade MDA5 sensing. Mice deficient with ADAR1 editing are embryonic lethal, but can be rescued to full life span when MDA5 is removed. In humans, ADAR1 loss-of-function and MDA5 gain-of-function mutations lead to rare autoimmune diseases such as Aicardi-Gouteries Syndrome. While aberrant activation of MDA5 sensing is deleterious in healthy individuals, it can be beneficial in cancer immunotherapy. RNA editing occurs at millions of sites across human tissues (Tan, Li et al., Nature 2017), but it was unclear which dsRNAs, if not properly edited, are immunogenic, and what role the ADAR1-dsRNA-MDA5 axis plays in common diseases.</p>
-    <h2>edQTLs mediate heritability of inflammatory diseases</h2>
-    <p>During Dr. Li’s postdoctoral training, he turned to human genetics for answers to these questions. He discovered that RNA editing quantitative trait loci (edQTLs) are strongly enriched in GWAS signals of common inflammatory diseases, even more than gene expression QTL and RNA splicing QTL. Furthermore, he showed that GWAS risk alleles, by each reducing editing level of their nearby immunogenic dsRNAs, can collectively elicit MDA5-dependent dsRNA sensing and subsequent chronic inflammation in a wide range of autoimmune and inflammatory diseases (Li et al., Nature 2022 ). These findings, based on well-established mechanism and human genetic evidence, show that insufficient RNA editing is a major risk factor underlying inflammatory diseases.</p>
-    <h2>Personalized dsRNA burden predicts individual’s disease risk</h2>
-    <p>Our lab’s research goal is to advance basic understanding of dsRNA editing and sensing to develop better tools for diagnosis and treatment of inflammatory disease patients. Specifically, we ask three questions:</p>
-    <ul>
-        <li>How do self dsRNAs evade innate immune sensing?</li>
-        <li>How do disease associated genetic variants affect dsRNA editing and sensing?</li>
-        <li>Which disease relevant cells are the trigger of immune response due to unwanted RNA sensing?</li>
-    </ul>
-    <p>We employ an integrated approach including both computational and experimental tools to address basic questions in dsRNA editing and sensing. By doing so, we aim to bring new insights into autoimmunity and RNA therapeutics.</p>
+
+    <!-- 第一段：左图右文字 -->
+    <div class="container mx-auto py-10">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <img src="https://picsum.photos/400/300" alt="研究方向 1" class="rounded-md shadow-md">
+            </div>
+            <div class="md:w-1/2 md:pl-10 py-6 md:py-0">
+                <h2 class="text-2xl font-bold mb-4">研究方向 1</h2>
+                <p class="text-gray-700">这里是研究方向 1 的详细介绍。本研究聚焦于......通过一系列的实验和分析，我们取得了......的成果。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第二段：右图左文字 -->
+    <div class="container mx-auto py-10">
+        <div class="flex flex-col md:flex-row-reverse items-center">
+            <div class="md:w-1/2">
+                <img src="https://picsum.photos/400/301" alt="研究方向 2" class="rounded-md shadow-md">
+            </div>
+            <div class="md:w-1/2 md:pr-10 py-6 md:py-0">
+                <h2 class="text-2xl font-bold mb-4">研究方向 2</h2>
+                <p class="text-gray-700">这里是研究方向 2 的详细介绍。本研究关注......采用了......的方法，为该领域带来了......的新思路。</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
+    
